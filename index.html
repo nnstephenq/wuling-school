@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>雾岭小学</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 整个游戏画面（16:9，会自动缩放） -->
+  <div id="stage">
+    <div id="scene-layer"></div>     <!-- 场景图、热区、叠加图 -->
+    <div id="hud"></div>             <!-- 右上角按钮：笔记本、物品、地图 -->
+    <div id="overlay-layer"></div>   <!-- 对话、笔记本、物品、地图、推理等弹出画面 -->
+    <div id="toast"></div>           <!-- 右上角的小提示 -->
+  </div>
+  <div id="error-box"></div>
+
+  <!-- ① 内容（剧情、物品、场景）：以后改剧情主要改这里 -->
+  <script src="assets/config/config.js"></script>
+  <script src="assets/story/characters.js"></script>
+  <script src="assets/story/items.js"></script>
+  <script src="assets/story/notebook.js"></script>
+  <script src="assets/story/places.js"></script>
+  <script src="assets/story/scenes.js"></script>
+  <script src="assets/story/deductions.js"></script>
+  <script src="assets/story/endings.js"></script>
+
+  <!-- ② 代码：引擎层 -->
+  <script src="src/core/util.js"></script>
+  <script src="src/core/state.js"></script>
+  <script src="src/core/conditions.js"></script>
+  <script src="src/core/validator.js"></script>
+
+  <!-- ③ 代码：画面 -->
+  <script src="src/ui/overlay.js"></script>
+  <script src="src/ui/dialog.js"></script>
+  <script src="src/ui/viewer.js"></script>
+  <script src="src/ui/sceneView.js"></script>
+  <script src="src/ui/hud.js"></script>
+  <script src="src/ui/notebookView.js"></script>
+  <script src="src/ui/inventoryView.js"></script>
+  <script src="src/ui/mapView.js"></script>
+  <script src="src/ui/deductionView.js"></script>
+  <script src="src/ui/puzzleView.js"></script>
+  <script src="src/ui/effects.js"></script>
+  <script src="src/ui/finalCaseView.js"></script>
+  <script src="src/ui/screens.js"></script>
+
+  <!-- ④ 代码：游戏规则 -->
+  <script src="src/systems/actions.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# 带水印的原图，留在本机，不上传
+新图片/
+
+# 系统和编辑器自动产生的文件
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
